@@ -32,9 +32,4 @@ python toolkit.py
 
 ## Reflection
 
-<!-- REPLACE THIS SECTION with your own 5-8 sentences before you push. Answer all three:
-     1. Which part was hardest?
-     2. Which bug took longest to fix?
-     3. What would you add with one more week? -->
-
-TODO: write 5-8 sentences in your own words here.
+The hardest part was keeping the program organised: I had to decide how the main menu loop, the to-do list's own mini menu and the other tools would fit together without getting tangled. The bug that took longest to fix was crashes from bad input, because typing letters where the program expected a number made `int()` fail, so I wrapped those inputs in `try` / `except` and added friendly messages. The to-do list was also tricky, since I had to check that a task number was valid before removing it so the list never caused an index error. Writing `toolkit_plan.txt` first really helped, because I already knew the menu text and which concepts each tool needed when I started coding. Testing every menu path, including Quit, showed me small things like what happens when you press Enter on an empty choice. With one more week, I would save the to-do list to a file so my tasks are still there the next time I open the program. I would also add a score tracker and a difficulty setting to the guessing game.
