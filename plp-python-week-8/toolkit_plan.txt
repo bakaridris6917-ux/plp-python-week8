@@ -1,0 +1,61 @@
+TOOLKIT PLAN - Week 8
+=====================
+
+1. MY TOOLS (one sentence each)
+-------------------------------
+Tool 1 - Number Guessing Game: The computer picks a secret number from 1 to 10 and I get 5 tries to guess it, with "too high" / "too low" hints.
+Tool 2 - To-Do List: I can add tasks, view them, mark one as done (remove it), and go back to the menu, and the list grows and shrinks while the program runs.
+Tool 3 - Simple Calculator: I enter two numbers and an operator (+, -, *, /) and the program prints the answer, refusing to divide by zero.
+Tool 4 - Countdown: I enter a number and the program counts down from it to zero, then says "Lift off!".
+
+
+2. EXACT MENU TEXT
+------------------
+=== Welcome to My Mini Toolkit! ===     (shown once, at the start)
+
+--- MAIN MENU ---
+1. Number Guessing Game
+2. To-Do List
+3. Simple Calculator
+4. Countdown
+5. Quit
+Choose an option (1-5):
+
+Invalid choice message:
+Oops! "<what I typed>" is not on the menu. Please pick a number from 1 to 5.
+
+Goodbye message:
+Thanks for using My Mini Toolkit. See you next time!
+
+
+3. CONCEPTS EACH TOOL USES
+--------------------------
+Main menu:
+  - while loop (menu comes back until Quit)
+  - if / elif / else (run the chosen tool, handle invalid choice)
+  - f-string (invalid choice message)
+
+Tool 1 - Number Guessing Game:
+  - loop (for loop over the 5 attempts)
+  - conditionals (too high / too low / correct)
+  - random module (random.randint)
+  - try / except (so typing letters does not crash)
+  - f-strings (attempts left, final result)
+
+Tool 2 - To-Do List:
+  - LIST that changes (append to add, pop to remove)
+  - while loop (sub-menu for the to-do list)
+  - conditionals (is the list empty? is the task number valid?)
+  - for loop with enumerate (to print numbered tasks)
+  - f-strings (task count, task names)
+
+Tool 3 - Simple Calculator:
+  - conditionals (if / elif for each operator, check divide by zero)
+  - try / except (non-number input)
+  - f-strings (show the full sum and answer)
+
+Tool 4 - Countdown:
+  - loop (for loop with range counting backwards)
+  - conditionals (stop with a message if the number is below 1)
+  - try / except
+  - f-strings (each number printed)
